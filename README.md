@@ -1,7 +1,7 @@
 Chris Warrick’s Style Guide
 ===========================
 
-**Revision 1 (2018-03-07)**
+**Revision 2 (2018-03-13)**
 
 This document lists coding conventions and standards followed by Chris Warrick.
 This guide is highly opinionated and does not have to be followed by anyone
@@ -210,6 +210,9 @@ A consistent and simple entity naming style is crucial.
    make them non-ambiguous. In those cases, the language used for the
    surrounding code MAY also not be English.
 7. (R, E) Entity names MUST be encodable in ASCII.
+8. (R) Uppercase abbreviations SHOULD be left as-is (eg. `XMLHTTPRequest` is
+   better than `XmlHttpRequest`, and much better than the real API,
+   `XMLHttpRequest`).  However, `iOSFooBar` MUST NOT be used.
 
 A. Prefixes and suffixes
 ------------------------
@@ -251,6 +254,10 @@ III. Comments and documentation
    The same rules apply to arguments or return values. (Example: a
    `get_current_foo` method does not need documentation, since it would say
    `Get current Foo`, which is unhelpful.)
+5. (E) Limit the use of special commenting structures. Instead of starting every
+   function with 10 lines of argument/return/exception details (half of which
+   are empty), only document the important things, and only if they actually
+   occur.
 
 IV. Syntax rules and technical stuff
 ====================================
