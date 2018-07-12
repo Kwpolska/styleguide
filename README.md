@@ -1,7 +1,7 @@
 Chris Warrick’s Style Guide
 ===========================
 
-**Revision 2 (2018-03-13)**
+**Revision 3 (2018-07-12)**
 
 This document lists coding conventions and standards followed by Chris Warrick.
 This guide is highly opinionated and does not have to be followed by anyone
@@ -299,3 +299,5 @@ B. The Python section
    RECOMMENDED if a narrower exception can be caught.
 5. Single quotes for strings are RECOMMENDED, but not mandatory, especially if
    the string contains single quotes (so escaping can be avoided).
+6. PEP 572 (Assignment Expressions, the `:=` operator) MUST NOT be used,
+   because it severely hinders code readability.
