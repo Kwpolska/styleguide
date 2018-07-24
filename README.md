@@ -1,7 +1,7 @@
 Chris Warrick’s Style Guide
 ===========================
 
-**Revision 3 (2018-07-12)**
+**Revision 4 (2018-07-24)**
 
 This document lists coding conventions and standards followed by Chris Warrick.
 This guide is highly opinionated and does not have to be followed by anyone
@@ -263,12 +263,15 @@ IV. Syntax rules and technical stuff
 ====================================
 
 1. `goto` MUST NOT be used.
-2. Modern language features and standards are heavily RECOMMENDED. This means
-   Python 3.3+, Java 8+, C++17 (or at least C++11).  *Versions as of March
+2. (R) Constructs like `while (line = read() != null)` (using assignment as an
+   expression) are NOT RECOMMENDED and should be used sparingly. In Python, the
+   `:=` operator MUST NOT be used.
+3. Modern language features and standards are heavily RECOMMENDED. This means
+   Python 3.3+, Java 8+, C++17 (or at least C++11).  *Versions as of July
    2018.*
-2. **JavaScript:** Even though semicolons are not necessary, their use is
+4. **JavaScript:** Even though semicolons are not necessary, their use is
    RECOMMENDED due to the automatic insertion being error-prone.
-4. Use Unix-style (LF) newlines and UTF-8 without BOM as the file encoding, if
+5. Use Unix-style (LF) newlines and UTF-8 without BOM as the file encoding, if
    possible.
 
 A. Exceptions and error handling
